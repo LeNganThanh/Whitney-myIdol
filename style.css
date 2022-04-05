@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: antiquewhite;
+}
+.houston {
+  width: 450px;
+  height: 680px;
+  margin: 3rem auto;
+  box-shadow: 25px 25px 57px #bababa, -15px -15px 17px #f7f1f1;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(218, 215, 215, 0.664),
+    rgba(241, 238, 238, 0.664)
+  );
+}
+/* setting the top header of playlist */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .fa-solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 1.7rem;
+  border: 1px solid rgba(168, 167, 167, 0.295);
+  background: linear-gradient(
+    125deg,
+    rgb(194, 191, 191),
+    rgba(224, 221, 221, 0.459)
+  );
+  border-radius: 10px;
+  margin: 1rem;
+}
+header h3 {
+  display: flex;
+  align-self: center;
+}
+header .fa-power-off {
+  color: red;
+}
+/* setting the body */
+.playlist {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+/* setting the image of whitney */
+.whitney img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: -5px 3px 2px #bababa, 5px -3px 2px #ffffff;
+}
+.playlist h4{
+    color: gray;
+    font-size: 1.3rem;
+}
+/* setting the track progress bar */
+.moment {
+  width: 370px;
+  height: 10px;
+  display: flex;
+  margin-bottom: 1rem;
+  border: 1px solid gainsboro;
+}
+.moment .color-linear {
+  width: 75%;
+  background: linear-gradient(
+    to right,
+    rgb(106, 204, 236),
+    rgb(19, 109, 182),
+    cyan,
+    white
+  );
+  border-radius: 10px 0 0 10px;
+}
+.moment .white {
+  width: 25%;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+}
+/* setting the footer button */
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer .play {
+  display: flex;
+  justify-content: space-around;
+}
+footer .fa-solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  padding: 0.7rem;
+  border: 1px solid rgb(230, 227, 227);
+  background: rgba(223, 221, 221, 0.877);
+  border-radius: 20px;
+  margin: 0.7rem;
+}
+footer .fa-backward,
+footer .fa-forward {
+  box-shadow: -5px 5px 7px #bababa, 5px -5px 7px #ffffff;
+}
+footer .fa-play {
+  width: 65px;
+  height: 65px;
+  color: aqua;
+  background: linear-gradient(
+    125deg,
+    rgb(194, 191, 191),
+    rgba(224, 221, 221, 0.459)
+  );
+}
+footer .line {
+  width: 250px;
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: inset -4px 4px rgb(184, 182, 182);
+  margin: 1rem auto;
+  border: 1px solid rgb(207, 205, 205);
+}
